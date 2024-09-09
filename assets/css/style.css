@@ -1,0 +1,196 @@
+/* Common Styles
+================*/
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    background-color: #fff;
+    color: #333;
+    background-image: url(../img/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+
+a,
+a:hover,
+a:focus,
+a:active,
+a:hover,
+a:visited {
+    text-decoration: none;
+    color: #333;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+input:focus,
+textarea:focus,
+button:focus {
+    outline: 0 solid;
+}
+
+
+header {
+    border-bottom: 1px solid #e3e3e8;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+header a.logo {}
+
+header a.logo img {
+    height: 48px;
+}
+
+header a.phone {
+    display: flex;
+    align-items: center;
+}
+
+header a.phone img {
+    margin-right: 10px;
+}
+
+header a.phone span {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+.zip-code {
+    padding: 145px 0 145px 0;
+    text-align: center;
+}
+
+.zip-code h4 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #184895;
+}
+
+.zip-code form {}
+
+.zip-code input {
+    display: block;
+    border: 1px solid #154bd6;
+    padding: 5px 10px;
+    font-size: 14px;
+    margin: 30px auto 15px;
+    width: 100%;
+}
+
+.zip-code button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    max-width: 24rem;
+    margin-left: auto;
+    margin-right: auto;
+    object-position: center center;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 6px;
+    height: 2.5rem;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    padding: 6px 16px !important;
+    background-color: rgb(21, 75, 214);
+    border: 0px;
+    margin: 0px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.zip-code button:hover {
+    background-color: #184895;
+    box-shadow: 0;
+}
+
+.zip-code button svg {
+    width: 1em;
+    height: 1em;
+    margin-left: 5px;
+    fill: #fff;
+}
+
+footer {
+    background-color: #f8f8f8;
+    padding-bottom: 15px;
+}
+
+footer .footer-links {
+    border-bottom: 1px solid #e5e7eb;
+    margin-bottom: 15px;
+}
+
+footer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+footer ul li {
+    padding: 22px 15px;
+    color: #00457c !important;
+}
+
+footer li a {
+    font-size: 14px;
+    color: #00457c !important;
+    font-weight: 700;
+}
+
+footer p {
+    font-size: 12px;
+    color: #6e6e6e;
+}
+
+footer h6 {
+    font-size: 10px;
+    color: #6e6e6e;
+    font-weight: 300;
+    text-align: center;
+}
+
+
+@media (max-width: 1199px) {
+    header a.phone span {
+        display: none;
+    }
+}
+
+@media (max-width: 500px) {
+    .zip-code {
+        padding: 80px 0 80px;
+    }
+
+    footer ul li {
+        padding: 15px 8px;
+    }
+
+    footer li a {
+        font-size: 10px;
+        font-weight: 600;
+    }
+}
